@@ -46,7 +46,7 @@
             <div class="form-group">
                 <label class="col-sm-2 control-label" for="featured">Highlights</label>
                 <div class="col-sm-10">
-                <input type="checkbox" {{$news->featured == 0 ? '' : 'checked'}} name="featured" value="{{$news->featured == 0 ? 1 : ''}}" placeholder="featured">Activated
+                <input type="checkbox" {{$news->featured == 0 ? '' : 'checked'}} name="featured" value="1" placeholder="featured">Activated
                 </div>
             </div>
             <div class="form-group">

@@ -24,7 +24,7 @@
                             <td>{{$category->name}}</td>
                             <td>
                                 <a href="{{route('admin.category.edit', ['id' => $category->id])}}" title="" class="btn btn-default btn-update"><i class="fa fa-pencil"></i></a>
-                                <a href="{{route('admin.category.destroy', [$category->id])}}" class="btn btn-default btn-delete-action"><i class="fa fa-trash-o"></i></a>
+                                <a onclick="return confirm('Are you sure to delete this item?')" href="{{route('admin.category.destroy', [$category->id])}}" class="btn btn-default btn-delete-action"><i class="fa fa-trash-o"></i></a>
                             </td>
                         </tr>
                     @empty
