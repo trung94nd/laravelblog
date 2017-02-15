@@ -26,7 +26,7 @@
                         <td>{{$new->title}}</td>
                         <td class="text-center">
                             <a href="{{route('admin.new.edit', ['id' => $new->id])}}" title="" class="btn btn-default btn-update"><i class="fa fa-pencil"></i></a>
-                            <a href="{{route('admin.new.destroy', [$new->id])}}" title="" class="btn btn-default btn-delete-action"><i class="fa fa-trash-o"></i></a>
+                            <a onclick="return confirm('Are you sure to delete this item?')" href="{{route('admin.new.destroy', [$new->id])}}" title="" class="btn btn-default btn-delete-action"><i class="fa fa-trash-o"></i></a>
                         </td>
                     </tr>
                     @empty
