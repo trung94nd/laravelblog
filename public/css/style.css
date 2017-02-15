@@ -1,0 +1,12 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.preview-uploader {
+    width: 150px;
+    display: block;
+}
+.img-preview{
+    width: 100%;
+}
