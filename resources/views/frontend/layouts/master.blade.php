@@ -17,16 +17,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="{{asset("css/bootstrap.min.css")}}">
     <link rel="stylesheet" href="{{asset("css/font-awesome.min.css")}}">
+    <link rel="stylesheet" href="{{asset("bootstrap-datepicker-1.6.4-dist/css/bootstrap-datepicker3.min.css")}}">
+    <link rel="stylesheet" href="{{asset("css/owl.carousel.min.css")}}">
+    <link rel="stylesheet" href="{{asset("css/owl.theme.default.min.css")}}">
     <link rel="stylesheet" href="{{asset("css/style.css")}}">
 
 </head>
 <body>
-    @yield('header')
-    @yield('main')
-    @yield('footer')
+    @include('frontend/includes/header')
+    <main role="main" class="main">
+        @yield('main-content')
+    </main>
+    @include('frontend/includes/footer')
     <script src="{{asset("js/jquery.min.js")}}"></script>
     <script src="{{asset("js/bootstrap.min.js")}}"></script>
-    <script src="{{asset("js/ckeditor/ckeditor.js")}}"></script>
-    <script>CKEDITOR.replace('content');</script>
+    <script src="{{asset("bootstrap-datepicker-1.6.4-dist/js/bootstrap-datepicker.min.js")}}"></script>
+    <script src="{{asset("js/owl.carousel.min.js")}}"></script>
+    <script src="{{asset("js/home.js")}}"></script>
 </body>
 </html>

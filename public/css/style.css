@@ -1,12 +1,372 @@
-*{
+/*-----------FONT FACE ----------------*/
+@font-face {
+  font-family: 'Open Sans';
+  src: url("../fonts/open_sans/Bold/OpenSans-Bold.eot?v=1.1.0");
+  src: url("../fonts/open_sans/Bold/OpenSans-Bold.eot?#iefix&v=1.1.0") format("embedded-opentype"), url("../fonts/open_sans/Bold/OpenSans-Bold.woff2?v=1.1.0") format("woff2"), url("../fonts/open_sans/Bold/OpenSans-Bold.woff?v=1.1.0") format("woff"), url("../fonts/open_sans/Bold/OpenSans-Bold.ttf?v=1.1.0") format("truetype"), url("../fonts/open_sans/Bold/OpenSans-Bold.svg?v=1.1.0#Bold") format("svg");
+  font-weight: bold;
+  font-style: normal; }
+  @font-face {
+  font-family: 'Open Sans';
+  src: url("../fonts/open_sans/Regular/OpenSans-Regular.eot?v=1.1.0");
+  src: url("../fonts/open_sans/Regular/OpenSans-Regular.eot?#iefix&v=1.1.0") format("embedded-opentype"), url("../fonts/open_sans/Regular/OpenSans-Regular.woff2?v=1.1.0") format("woff2"), url("../fonts/open_sans/Regular/OpenSans-Regular.woff?v=1.1.0") format("woff"), url("../fonts/open_sans/Regular/OpenSans-Regular.ttf?v=1.1.0") format("truetype"), url("../fonts/open_sans/Regular/OpenSans-Regular.svg?v=1.1.0#Regular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+/*-------------CSS PUBLIC-------------*/
+*, h1, h2, h3, .customize-navbar, .customize-brand, .customize-nav {
     margin: 0;
     padding: 0;
 }
-
+body{
+  font-family: 'Open Sans', sans-serif !important;
+}
+body, .title-item, .gallery-title a{
+  line-height: normal;
+}
+.image-responsive {
+  width: 100% ;
+  height: 100% ;
+}
+.logo-image, .page_slide, #carousel-csht .item-slide {
+  width: 100%;
+}
+.display-block, .preview-uploader, .headding-main:after, .gallery-item, .image-item {
+  display: block;
+}
+.customize-navbar, .customize-nav .active a {
+  background: #fff !important;
+}
+.hire-car-button, .headding-main:after {
+  background-color: #015691;
+}
+.hire-car-title, .customize-brand span{
+  color: #e3b10d;
+}
+.hire-car-description, .hire-car-label, .title-service, .describe-service, .headding-main a, .title-item a, .gallery-title a {
+  color: #262626;
+}
+.customize-nav>li>a, .footer p, .customize-nh-left, .customize-nh-right {
+  color: #000 !important;
+}
+.customize-nav .active a {
+  color: #015691 !important;
+}
+.customize-navbar,  .customize-navbar .customize-bar {
+  border: none;
+}
+.title-service, .title-item, .footer p {
+  font-size: 16px;
+}
+.customize-brand span, .gallery-title a {
+  font-size: 18px;
+}
+.headding-main {
+  font-size: 24px;
+}
+.hire-car-title {
+  font-size: 30px;
+}
+.gallery-title a, .hire-car-description {
+  font-weight: 300;
+}
+.customize-nav .active a, .hire-car-title, .hire-car-label,.customize-brand span, .title-service, .headding-main a, .title-item {
+  font-weight: 600;
+}
+.customize-brand span, .hire-car-title, .headding-main a, .gallery-title a {
+  text-transform: uppercase;
+}
+a:hover {
+  text-decoration: none;
+}
+.hire-car, .hire-car-button {
+  border-radius: 5px;
+}
+.service-item, #galleryCarousel, .new-item, .padding0-10, .img-service, .content-service {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.wrap-content, .owl-nh {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.pd-15{
+  padding: 15px 0;
+}
+.service, .new-item, .footer {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+.padding-30{
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.title-service {
+  margin-bottom: 10px;
+}
+.m-pd-l0 {
+    padding-left: 0;
+}
+.m-pd-r0 {
+    padding-right: 0;
+}
+/* -------------  HEADER  ------------- */
+.logo {
+  width: 44px;
+  height: 48px;
+  display: inline-block;
+  margin-right: 5px;
+}
+.customize-nav>li>a{
+  text-align: center;
+  padding-left: 7.5px;
+  padding-right: 7.5px;
+}
+/* -------------SLIDE ẢNH------------- */
+.item.item-slide .image-responsive {
+    height: 100%;
+}
+.hire-car, .customize-nh-left, .customize-nh-right{
+  position: absolute;
+}
+.customize-nh-left, .customize-nh-right {
+  width: 16px;
+  height: 44px;
+  top: calc(50% - 16px);
+  cursor: pointer;
+}
+.customize-nh-left{
+  left: -10px;
+}
+.customize-nh-right{
+  right: -10px;
+}
+.hire-car {
+  top: 35px;
+  width: 450px;
+  height: 420px;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+.hire-car-label, .hire-car-input {
+  padding-right: 5px;
+  padding-left: 5px;
+}
+.species, .hire-car {
+  padding: 35px 30px;
+}
+.hire-car-description {
+  margin-top: 12px;
+  margin-bottom: 30px;
+}
+.hire-car-label{
+  width: 85px;
+}
+.hire-car-button {
+  width: 140px;
+  height: 40px;
+  margin-top: 15px;
+}
+/* -------------  MAIN  ------------- */
+.container-wrap{
+  max-width: 990px;
+  margin: 0 auto;
+}
 .preview-uploader {
-    width: 150px;
-    display: block;
+  width: 150px;
 }
-.img-preview{
+.page_slide,.owl-nh {
+  position: relative;
+}
+#carousel-csht .item-slide{
+  height: 495px;
+}
+#carousel-csht .item-slide, .image-item{
+  overflow: hidden;
+}
+.gallery-title{
+  padding: 16px 0;
+  word-spacing: -1px;
+}
+.customize-col-8{
+  width: 75%;
+}
+.img-service {
+  width: 70px;
+  height: 60px;
+}
+.species {
+    box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.5);
+}
+.news {
+    padding: 40px;
+    background-color: #f5f5f5;
+}
+.gallery-item {
+  // width: 300px;
+  height: 191.1px;
+}
+.image-item {
+  // width: 300px;
+  height: 225px;
+}
+.headding-main:after {
+    content: '';
+    width: 130px;
+    height: 2px;
+    margin: 20px auto;
+}
+.title-item{
+  margin: 10px 0 6px;
+}
+/* ---------------- FOOTER -------------------*/
+.footer{
+  border-top: 5px solid #e4b10d;
+}
+/* ---------------- Responsive -------------------*/
+@media (min-width: 320px) and (max-width: 767px){
+  .m-container{
     width: 100%;
+  }
+  .m-container{
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  .m-row{
+    margin-left: -12px;
+    margin-right: -12px;
+  }
+  .padding0-10, .pd-15, .hire-car-label, .hire-car-input, .service-item, .species, .owl-nh, #galleryCarousel, .m-pd-l0, .m-pd-r0 {
+    padding: 0;
+  }
+  .logo {
+    width: 32px;
+    height: 34.8px;
+  }
+  .customize-brand span, .title-service {
+    font-size: 12px;
+  }
+  .customize-nav>li>a{
+    text-align: initial;
+    padding: 5px;
+  }
+  .headding-main{
+    font-size: 16px;
+  }
+  .headding-main:after{
+    margin: 10px auto;
+  }
+  .m-pd-r0 {
+    padding-right: 0;
+  }
+  .navbar-brand.customize-bran {
+    padding: 8px 0;
+  }
+  .service, .customize-navbar .pd-15{
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .title-service{
+    margin-bottom: 5px;
+  }
+  .m-pd-15, .species{
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  .hire-car{
+    padding: 25px;
+  }
+  .hire-car{
+    width: 93%;
+    left: 3.5%;
+    top: 25px;
+  }
+  .navbar .customize-navbar .customize-bar {
+    background-color: #000;
+    width: 20px;
+    height: 3px;
+    border-radius: 0;
+    margin-top: 2px;
+  }
+  .customize-col-8 {
+    width: initial;
+  }
+  .service-item{
+    text-align: center;
+  }
+  .img-service {
+    width: 24px;
+    height: 24px;
+    float: none;
+    margin: 0 auto 6px;
+  }
+  .gallery-item {
+    max-width: 300px;
+    height: 211.1px;
+  }
+  .species-item {
+    padding-top: 13px;
+    padding-bottom: 11px;
+  }
+  .owl-stage {
+    left: -51px;
+  }
+  .news{
+    padding: 20px;
+  }
+  .new-item{
+    padding: 10px 0 0 ;
+  }
+  .image-item {
+    max-width: 350px;
+    height: 225px;
+  }
 }
+@media (min-width: 414px) and (max-width: 767px){
+  /* man hinh iphone 6plus */
+  .customize-brand span{
+    font-size: 16px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px){
+  #galleryCarousel{
+    padding: 0;
+  }
+  .customize-col-8{
+    width: 66.66666667%;
+  }
+  .customize-nav>li>a {
+    text-align: center;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+  .container-wrap{
+    padding: 0 15px;
+  }
+  .species, .news{
+    padding: 25px 0;
+  }
+  .new-item, .species-item {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .customize-brand span{
+    font-size: 12px;
+  }
+  .customize-nav>li>a, .gallery-title a, .describe-service {
+      font-size: 13px;
+  }
+  .title-service, .title-item, .footer p {
+    font-size: 14px;
+  }
+  .image-item {
+    height: 150px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1200px){
+  .title-item, .gallery-title a {
+      font-size: 16px;
+  }
+  .gallery-title a {
+    word-spacing: 2px;
+  }
+}
+

@@ -6,7 +6,7 @@
             <div class="form-group">
                 <label class="col-sm-2 control-label" for="name">Picture</label>
                 <div class="col-sm-10">
-                    <div class="preview-uploader"><img class="img-preview" src="{{url('uploads',['thumbnail' => $news->thumbnail])}}"></div>
+                    <div class="display-block"><img class="img-responive" src="{{url('uploads',['thumbnail' => $news->thumbnail])}}"></div>
                     <p class="clearfix"></p>
                     <input type="file" name="thumbnail">
                 </div>
