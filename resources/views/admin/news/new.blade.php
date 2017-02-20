@@ -22,7 +22,7 @@
                 <tbody>
                     @forelse ($news as $new)
                     <tr>
-                        <td><a class="preview-uploader" ><img class="img-preview" src="{{url('uploads',['thumbnail' => $new->thumbnail])}}" alt=""></a></td>
+                        <td><a class="display-block" ><img class="img-responive" src="{{url('uploads',['thumbnail' => $new->thumbnail])}}" alt=""></a></td>
                         <td>{{$new->title}}</td>
                         <td class="text-center">
                             <a href="{{route('admin.new.edit', ['id' => $new->id])}}" title="" class="btn btn-default btn-update"><i class="fa fa-pencil"></i></a>
