@@ -1,19 +1,24 @@
 /*-----------FONT FACE ----------------*/
 @font-face {
   font-family: 'Open Sans';
-  src: url("../fonts/open_sans/Bold/OpenSans-Bold.eot?v=1.1.0");
-  src: url("../fonts/open_sans/Bold/OpenSans-Bold.eot?#iefix&v=1.1.0") format("embedded-opentype"), url("../fonts/open_sans/Bold/OpenSans-Bold.woff2?v=1.1.0") format("woff2"), url("../fonts/open_sans/Bold/OpenSans-Bold.woff?v=1.1.0") format("woff"), url("../fonts/open_sans/Bold/OpenSans-Bold.ttf?v=1.1.0") format("truetype"), url("../fonts/open_sans/Bold/OpenSans-Bold.svg?v=1.1.0#Bold") format("svg");
+  src: url("../fonts/open_sans/fonts/Bold/OpenSans-Bold.eot?v=1.1.0");
+  src: url("../fonts/open_sans/fonts/Bold/OpenSans-Bold.eot?#iefix&v=1.1.0") format("embedded-opentype"), url("../fonts/open_sans/fonts/Bold/OpenSans-Bold.woff2?v=1.1.0") format("woff2"), url("../fonts/open_sans/fonts/Bold/OpenSans-Bold.woff?v=1.1.0") format("woff"), url("../fonts/open_sans/fonts/Bold/OpenSans-Bold.ttf?v=1.1.0") format("truetype"), url("../fonts/open_sans/fonts/Bold/OpenSans-Bold.svg?v=1.1.0#Bold") format("svg");
   font-weight: bold;
   font-style: normal; }
   @font-face {
   font-family: 'Open Sans';
-  src: url("../fonts/open_sans/Regular/OpenSans-Regular.eot?v=1.1.0");
-  src: url("../fonts/open_sans/Regular/OpenSans-Regular.eot?#iefix&v=1.1.0") format("embedded-opentype"), url("../fonts/open_sans/Regular/OpenSans-Regular.woff2?v=1.1.0") format("woff2"), url("../fonts/open_sans/Regular/OpenSans-Regular.woff?v=1.1.0") format("woff"), url("../fonts/open_sans/Regular/OpenSans-Regular.ttf?v=1.1.0") format("truetype"), url("../fonts/open_sans/Regular/OpenSans-Regular.svg?v=1.1.0#Regular") format("svg");
+  src: url("../fonts/open_sans/fonts/Regular/OpenSans-Regular.eot?v=1.1.0");
+  src: url("../fonts/open_sans/fonts/Regular/OpenSans-Regular.eot?#iefix&v=1.1.0") format("embedded-opentype"), url("../fonts/open_sans/fonts/Regular/OpenSans-Regular.woff2?v=1.1.0") format("woff2"), url("../fonts/open_sans/fonts/Regular/OpenSans-Regular.woff?v=1.1.0") format("woff"), url("../fonts/open_sans/fonts/Regular/OpenSans-Regular.ttf?v=1.1.0") format("truetype"), url("../fonts/open_sans/fonts/Regular/OpenSans-Regular.svg?v=1.1.0#Regular") format("svg");
   font-weight: normal;
   font-style: normal; }
-
+  @font-face {
+  font-family: 'Open Sans';
+  src: url("../fonts/open_sans/fonts/Light/OpenSans-Light.eot?v=1.1.0");
+  src: url("../fonts/open_sans/fonts/Light/OpenSans-Light.eot?#iefix&v=1.1.0") format("embedded-opentype"), url("../fonts/open_sans/fonts/Light/OpenSans-Light.woff2?v=1.1.0") format("woff2"), url("../fonts/open_sans/fonts/Light/OpenSans-Light.woff?v=1.1.0") format("woff"), url("../fonts/open_sans/fonts/Light/OpenSans-Light.ttf?v=1.1.0") format("truetype"), url("../fonts/open_sans/fonts/Light/OpenSans-Light.svg?v=1.1.0#Light") format("svg");
+  font-weight: 300;
+  font-style: normal; }
 /*-------------CSS PUBLIC-------------*/
-*, h1, h2, h3, .customize-navbar, .customize-brand, .customize-nav {
+*, h1, h2, h3, .customize-navbar, .customize-brand, .customize-nav, .footer p:last-child {
     margin: 0;
     padding: 0;
 }
@@ -33,23 +38,20 @@ body, .title-item, .gallery-title a{
 .display-block, .preview-uploader, .headding-main:after, .gallery-item, .image-item {
   display: block;
 }
-.customize-navbar, .customize-nav .active a {
+.customize-navbar, .customize-nav .active a, .group_addon {
   background: #fff !important;
 }
 .hire-car-button, .headding-main:after {
-  background-color: #015691;
+  background-color: #0D718D;
 }
 .hire-car-title, .customize-brand span{
-  color: #e3b10d;
+  color: #BE9334;
 }
 .hire-car-description, .hire-car-label, .title-service, .describe-service, .headding-main a, .title-item a, .gallery-title a {
   color: #262626;
 }
-.customize-nav>li>a, .footer p, .customize-nh-left, .customize-nh-right {
-  color: #000 !important;
-}
-.customize-nav .active a {
-  color: #015691 !important;
+.customize-navbar .customize-nav>li>a, .footer p, .customize-nh-left, .customize-nh-right {
+  color: #000;
 }
 .customize-navbar,  .customize-navbar .customize-bar {
   border: none;
@@ -66,11 +68,14 @@ body, .title-item, .gallery-title a{
 .hire-car-title {
   font-size: 30px;
 }
-.gallery-title a, .hire-car-description {
+.gallery-title a, .hire-car-description, .describe-item {
   font-weight: 300;
 }
-.customize-nav .active a, .hire-car-title, .hire-car-label,.customize-brand span, .title-service, .headding-main a, .title-item {
+.hire-car-label, .title-service, .headding-main a, .title-item {
   font-weight: 600;
+}
+.customize-nav .active a, .hire-car-title, .customize-brand span {
+  font-weight: bold;
 }
 .customize-brand span, .hire-car-title, .headding-main a, .gallery-title a {
   text-transform: uppercase;
@@ -113,10 +118,13 @@ a:hover {
   display: inline-block;
   margin-right: 5px;
 }
-.customize-nav>li>a{
+.customize-navbar .customize-nav>li>a{
   text-align: center;
   padding-left: 7.5px;
   padding-right: 7.5px;
+}
+.customize-navbar .customize-nav .active a, .customize-navbar .customize-nav>li>a:hover, .title-service:hover, .gallery-title a:hover, .title-item a:hover {
+  color: #0D718D;
 }
 /* -------------SLIDE ẢNH------------- */
 .item.item-slide .image-responsive {
@@ -162,6 +170,37 @@ a:hover {
   height: 40px;
   margin-top: 15px;
 }
+.fix-input::-webkit-input-placeholder, .fix-input {
+  color: #99a9bf;
+  border-color:  #c0ccda;
+}
+.fix-input::-moz-placeholder, .fix-input {
+  color: #99a9bf;
+  border-color:  #c0ccda;
+}
+.fix-input::-moz-placeholder, .fix-input {
+  color: #99a9bf;
+  border-color:  #c0ccda;
+}
+.fix-input:focus {
+  box-shadow: none;
+  border-color:  #c0ccda;
+}
+.date-control{
+  border-right: 0;
+}
+.fa_calendar{
+  font-size: 20px;
+  opacity: .4;
+}
+.fa_square {
+    width: 4px;
+    height: 4px;
+    background: #99a9bf;
+    position: absolute;
+    bottom: 11px;
+    right: 17px;
+}
 /* -------------  MAIN  ------------- */
 .container-wrap{
   max-width: 990px;
@@ -181,7 +220,6 @@ a:hover {
 }
 .gallery-title{
   padding: 16px 0;
-  word-spacing: -1px;
 }
 .customize-col-8{
   width: 75%;
@@ -244,7 +282,7 @@ a:hover {
   .navbar-brand.customize-brand {
       line-height: 50px;
   }
-  .customize-nav>li>a{
+  .customize-navbar .customize-nav>li>a{
     text-align: initial;
     padding: 5px;
   }
@@ -333,7 +371,7 @@ a:hover {
   .customize-col-8{
     width: 66.66666667%;
   }
-  .customize-nav>li>a {
+  .customize-navbar .customize-nav>li>a {
     text-align: center;
     padding-left: 5px;
     padding-right: 5px;
@@ -366,7 +404,6 @@ a:hover {
       font-size: 16px;
   }
   .gallery-title a {
-    word-spacing: 2px;
   }
 }
 
