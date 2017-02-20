@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="{{asset("bootstrap-datepicker-1.6.4-dist/css/bootstrap-datepicker3.min.css")}}">
     <link rel="stylesheet" href="{{asset("css/owl.carousel.min.css")}}">
     <link rel="stylesheet" href="{{asset("css/owl.theme.default.min.css")}}">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;subset=vietnamese" rel="stylesheet">
     <link rel="stylesheet" href="{{asset("css/style.css")}}">
 
 </head>
