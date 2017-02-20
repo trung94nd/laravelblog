@@ -8,21 +8,21 @@
                     <div class="form-group">
                         <label class="col-sm-3 control-label hire-car-label hidden-xs" for="name">Họ tên</label>
                         <div class="col-sm-9 hire-car-input">
-                            <input type="text" name="name" value="" class="form-control" placeholder="Nhập họ tên">
+                            <input type="text" name="name" value="" class="form-control fix-input" placeholder="Nhập họ tên">
                             {!! $errors->first('name', '<span class="help-inline text-danger">:message</span>') !!}
                         </div>
                     </div>
                     <div class="form-group">
                         <label for="phone" class="col-sm-3 control-label hire-car-label hidden-xs ">Điện thoại</label>
                         <div class="col-sm-9 hire-car-input">
-                            <input type="text" name="phone" value="" class="form-control" placeholder="Nhập số điện thoại">
+                            <input type="text" name="phone" value="" class="form-control fix-input" placeholder="Nhập số điện thoại">
                             {!! $errors->first('phone', '<span class="help-inline text-danger">:message</span>') !!}
                         </div>
                     </div>
                     <div class="form-group">
                         <label for="species" class="col-sm-3 control-label hire-car-label hidden-xs">Dòng xe</label>
                         <div class="col-sm-9 hire-car-input">
-                            <select name="species" class="form-control" placeholder="Dòng xe">
+                            <select name="species" class="form-control fix-input" placeholder="Dòng xe">
                                 <option value="">4 chỗ, 16 chỗ...</option>
                                {{--  @foreach ($species as $specie)
                                     <option value=""></option>
@@ -34,9 +34,11 @@
                         <label class="col-sm-3 control-label hire-car-label hidden-xs" for="create_at">Ngày đặt</label>
                         <div id="sandbox-container" class="col-sm-9 hire-car-input" >
                             <div class="input-group date" data-provide="datepicker">
-                                <input type="text" class="form-control" placeholder="Chọn ngày đặt">
-                                <div class="input-group-addon">
-                                    <span class="glyphicon glyphicon-calendar"></span>
+                                <input type="text" class="form-control fix-input date-control" placeholder="Chọn ngày đặt">
+                                <div class="input-group-addon group_addon">
+                                    <i class="fa fa-calendar-o fa_calendar" aria-hidden="true">
+                                        <i class="fa_square"></i>
+                                    </i>
                                 </div>
                             </div>
                         </div>
