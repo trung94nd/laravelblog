@@ -106,9 +106,6 @@ a:hover {
 .m-pd-l0 {
     padding-left: 0;
 }
-.m-pd-r0 {
-    padding-right: 0;
-}
 /* -------------  HEADER  ------------- */
 .logo {
   width: 44px;
@@ -243,6 +240,9 @@ a:hover {
   }
   .customize-brand span, .title-service {
     font-size: 12px;
+  }
+  .navbar-brand.customize-brand {
+      line-height: 50px;
   }
   .customize-nav>li>a{
     text-align: initial;
